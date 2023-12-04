@@ -1,0 +1,4 @@
+Drink ID,Name,Type,Main Ingredients,Alcoholic,Preparation Method,Origin,Serving Temperature,Glass Type
+001,Margarita,Cocktail,"Tequila, Triple sec, Lime juice, Salt",Yes,Mix ingredients and serve over ice,Mexico,Cold,Cocktail glass
+002,Cappuccino,Coffee,"Espresso, Steamed milk, Milk foam",No,"Brew espresso, add steamed milk and top with foam",Italy,Hot,Cup
+003,Lemonade,Juice,"Lemon, Sugar, Water",No,Mix lemon juice with sugar and water,Egypt,Cold,Highball glass
