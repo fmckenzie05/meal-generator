@@ -1,7 +1,4 @@
-
-
-import random
-import pandas as pd
+# random_meal_gen.py
 
 # List of ingredients that can be used in the meals
 # Identify the requirements for the app. You will need to decide what types of meals you want to generate (breakfast, lunch, dinner, snacks, etc.), and what types of ingredients you want to include in the meals. You may also want to consider any dietary restrictions or preferences that you want to take into account.
@@ -12,9 +9,11 @@ import pandas as pd
 # Test the app with a small group of users to get feedback and make any necessary improvements.
 # Implement restriction base on diet e.g lactose or type 2 diabetic.
 
+import random
+import pandas as pd
+
 with open("./ingredients.csv", "w", "UTF-8") as ingredients:
     df_i = pd.read_csv(ingredients.csv)
-
 
 
 # Function to generate a random meal from the list of ingredients
@@ -38,7 +37,6 @@ def generate_meal(meal_type):
     else:
         return "Invalid meal type"
 
-
 def generate_drink(drink_type):
     if drink_type == "tea":
         # Generate a random tea drink
@@ -52,12 +50,12 @@ def generate_drink(drink_type):
     else:
         return "water"
 
-
 # Generate a random breakfast, lunch, and dinner
 breakfast = generate_meal("breakfast")
 lunch = generate_meal("lunch")
 dinner = generate_meal("dinner")
 snack = generate_meal("snack")
+
 # Generate a random drink, tea, beer, and water
 tea = generate_drink("tea")
 beer = generate_drink("beer")
